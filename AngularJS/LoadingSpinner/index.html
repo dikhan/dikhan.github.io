@@ -40,7 +40,7 @@
   </head>
   <body ng-app="MainApp">
 
-    <div class="container bs-docs-container">
+    <div class="container bs-docs-container" ng-controller="MainAppController" ng-init="init()">
       <!-- Greyed out area which does not allow the user to interact with the interface -->
       <div id="spinner-background">
         <img class="spinner-image" src="images/loading2.gif"/>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="row">
-        <div ng-controller="MainAppController" ng-init="init()">
+        <div>
           <div class="bs-example" data-example-id="striped-table">
             <table class="table table-striped table-condensed">
               <thead>
