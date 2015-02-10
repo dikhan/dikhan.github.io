@@ -23,8 +23,7 @@ mainApp.service('MainAppService', ['$rootScope', '$http', '$log', '$q', function
               // REST Public End points - https://www.biocatalogue.org/wiki/public:api#quick_examples
               $http({
                 method: 'GET',
-                //url: "https://www.biocatalogue.org/search.json",
-                url: "../bioCatalogueSearchResults.json",
+                url: "https://www.biocatalogue.org/search.json",
                 data: $.param({ // Form Parameters
                 }),              
                 params: { // Query Parameters
