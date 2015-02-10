@@ -59,7 +59,23 @@
         </div>
       </div>
 
-      <div class="row">
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Search Query</h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-3">
+            <input type="text" class="form-control" id="searchQuery" ng-model="searchQuery" placeholder="Enter search query">
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary" ng-click="fetchResults()">Fetch Results</button>
+            <span class="label label-warning">(Click here to see the spinner running)</span>
+          </div>
+        </div>
+      </div>
+
+<!--       <div class="row">
         <div class="col-md-9">
           <div class="form-group">
             <label for="searchQuery">Search Query: </label>
@@ -69,11 +85,12 @@
               </div>
               <div class="col-md-3">
                 <button class="btn btn-primary" ng-click="fetchResults()">Fetch Results</button>
+                <label>(Click here to see the spinner running)</label>
               </div>
             </div>
           </div> 
         </div>
-      </div>
+      </div> -->
 
       <div class="row">
         <div>
