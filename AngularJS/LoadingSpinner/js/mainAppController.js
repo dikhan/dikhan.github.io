@@ -29,8 +29,7 @@ mainApp.controller('MainAppController', ['$rootScope','$scope', '$http', '$log',
     {
         MainAppService.fetchNewResults($scope.searchQuery).then(function(data){
             $scope.searchResults = data["search"].results;
-        }); // End getUserLocation
-
+        });
     }
       
 }]);
