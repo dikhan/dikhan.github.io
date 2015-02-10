@@ -1,0 +1,56 @@
+Add this to your app module
+
+rlpApp.config(function ($httpProvider) {
+  $httpProvider.responseInterceptors.push('myHttpInterceptor');
+
+  var spinnerFunction = function spinnerFunction(data, headersGetter) {
+    $("#spinner-background").show();
+    return data;
+  };
+
+  $httpProvider.defaults.transformRequest.push(spinnerFunction);
+});
+
+rlpApp.factory('myHttpInterceptor', function ($q, $window) {
+  return function (promise) {
+    return promise.then(function (response) {
+      $("#spinner-background").hide();
+      return response;
+    }, function (response) {
+      $("#spinner-background").hide();
+      return $q.reject(response);
+    });
+  };
+});
+
+
+Aniadir esto a tu pagina
+
+  <div id="spinner-background">
+    <img class="spinner-image" src="/application/themes/rlp/images/ajax-loader_white.gif"/>
+  </div>
+
+#spinner-background {
+background: #000000;
+display: none;
+height: 100%;
+left: 0px;
+opacity: .5;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 3;
+}
+
+img.spinner-image {
+height: 100px;
+left: 50%;
+margin-left: -50px;
+margin-top: -50px;
+position: fixed;
+top: 50%;
+width: 100px;
+}
+
+
+Generar un boton que haga una consulta http

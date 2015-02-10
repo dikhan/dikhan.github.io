@@ -1,0 +1,285 @@
+{
+   "search":{
+      "search_query":"ebi",
+      "current_page":1,
+      "per_page":21,
+      "pages":1,
+      "total":21,
+      "results":[
+         {
+            "name":"jenny",
+            "affiliation":"EBI",
+            "public_email":null,
+            "joined":"2008-11-11T19:02:21Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/3"
+         },
+         {
+            "name":"dsturmay",
+            "affiliation":"ebi ",
+            "public_email":null,
+            "joined":"2008-11-13T17:51:58Z",
+            "location":{
+               "city":"",
+               "country":"Austria",
+               "country_code":"AT",
+               "flag":"https://www.biocatalogue.org/assets/flags/at.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/22"
+         },
+         {
+            "name":"Nick Juty",
+            "affiliation":"EBI",
+            "public_email":"",
+            "joined":"2009-11-25T14:38:43Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/195"
+         },
+         {
+            "name":"ChEBI Help",
+            "affiliation":"EBI",
+            "public_email":"chebi-help@ebi.ac.uk",
+            "joined":"2010-02-23T21:11:39Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/256"
+         },
+         {
+            "name":"dbfetch",
+            "description":"Dbfetch is an acronym for \"database fetch\". Dbfetch provides an easy way to retrieve entries from various databases available at EMBL-EBI in a consistent manner. It can be used from any browser, via a web-aware scripting tool (e.g. curl, lynx, elinks or w",
+            "submitter":"https://www.biocatalogue.org/users/259",
+            "created_at":"2010-10-22T14:08:10Z",
+            "archived_at":null,
+            "service_technology_types":[
+               "REST"
+            ],
+            "latest_monitoring_status":{
+               "label":"PASSED",
+               "message":"All tests were successful for this service",
+               "symbol":"https://www.biocatalogue.org/assets/tick-sphere-50.png",
+               "small_symbol":"https://www.biocatalogue.org/assets/small-tick-sphere-50.png",
+               "last_checked":"2015-02-07T08:39:07Z"
+            },
+            "resource":"https://www.biocatalogue.org/services/2748"
+         },
+         {
+            "name":null,
+            "endpoint_label":"GET /dbfetch",
+            "http_method_type":"GET",
+            "url_template":"http://www.ebi.ac.uk/Tools/dbfetch/dbfetch?db={db}&format={format}&id={id}&pageHtml={pageHtml}&style={style}&info={info}",
+            "submitter":"https://www.biocatalogue.org/users/259",
+            "description":"Get an entry or a set of entries by the entry identifier from a database, specifying the required data format and result style.",
+            "documentation_url":null,
+            "created_at":"2010-10-22T14:27:59Z",
+            "archived_at":null,
+            "resource":"https://www.biocatalogue.org/rest_methods/141"
+         },
+         {
+            "name":"EMBL-EBI Literature Services",
+            "affiliation":"EMBL-EBI",
+            "public_email":"",
+            "joined":"2010-10-13T09:07:51Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/639"
+         },
+         {
+            "name":"EMBL-EBI Support",
+            "affiliation":"EMBL-EBI",
+            "public_email":"",
+            "joined":"2010-11-03T14:39:39Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/655"
+         },
+         {
+            "name":"EB-eye",
+            "description":"The system is developed on top of the Apache Lucene project framework, which is an Open-source, high-performance, full-featured text search engine library written entirely in Java. It uses this technology to index EBI databases in various formats (e.g. fl",
+            "submitter":"https://www.biocatalogue.org/users/655",
+            "created_at":"2009-06-15T11:54:26Z",
+            "archived_at":null,
+            "service_technology_types":[
+               "SOAP"
+            ],
+            "latest_monitoring_status":{
+               "label":"PASSED",
+               "message":"All tests were successful for this service",
+               "symbol":"https://www.biocatalogue.org/assets/tick-sphere-50.png",
+               "small_symbol":"https://www.biocatalogue.org/assets/small-tick-sphere-50.png",
+               "last_checked":"2015-02-07T07:28:22Z"
+            },
+            "resource":"https://www.biocatalogue.org/services/1928"
+         },
+         {
+            "name":"Eric E. Nzuobontane",
+            "affiliation":"EMBL-EBI",
+            "public_email":"",
+            "joined":"2008-11-11T17:46:07Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/2"
+         },
+         {
+            "name":"tlaurent",
+            "affiliation":"EMBL-EBI",
+            "public_email":null,
+            "joined":"2008-11-14T10:05:24Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/25"
+         },
+         {
+            "name":"Rodrigo Lopez",
+            "affiliation":"EMBL-EBI",
+            "public_email":null,
+            "joined":"2008-11-14T12:00:23Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/26"
+         },
+         {
+            "name":"SoapLab Support",
+            "affiliation":"EMBL-EBI",
+            "public_email":"",
+            "joined":"2009-01-26T15:10:01Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/43"
+         },
+         {
+            "name":"rodrigoluk",
+            "affiliation":"EMBL-EBI",
+            "public_email":null,
+            "joined":"2009-03-19T18:53:32Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/53"
+         },
+         {
+            "name":"chenli",
+            "affiliation":"EMBL-EBI",
+            "public_email":null,
+            "joined":"2009-05-01T09:38:16Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/62"
+         },
+         {
+            "name":"rafael",
+            "affiliation":"EBI-EMBL",
+            "public_email":"rafael@ebi.ac.uk",
+            "joined":"2009-08-24T13:08:20Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/147"
+         },
+         {
+            "name":"Albert Vilella",
+            "affiliation":"EMBL-EBI",
+            "public_email":"avilella@gmail.com",
+            "joined":"2010-12-03T11:30:09Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/670"
+         },
+         {
+            "name":"ArrayExpress",
+            "affiliation":"EMBL-EBI",
+            "public_email":"",
+            "joined":"2010-12-08T07:32:22Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/676"
+         },
+         {
+            "name":"Pride",
+            "affiliation":"EMBL-EBI",
+            "public_email":"",
+            "joined":"2010-12-08T07:39:15Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/677"
+         },
+         {
+            "name":"Rajesh Radhakrishnan",
+            "affiliation":"EMBL-EBI",
+            "public_email":"rajeshr@ebi.ac.uk",
+            "joined":"2014-04-08T10:44:32Z",
+            "location":{
+               "city":"",
+               "country":"United Kingdom",
+               "country_code":"GB",
+               "flag":"https://www.biocatalogue.org/assets/flags/gb.png"
+            },
+            "resource":"https://www.biocatalogue.org/users/1068"
+         },
+         {
+            "name":"European Bioinformatics Institute (EMBL-EBI)",
+            "description":"The European Bioinformatics Institute (EBI) is a non-profit academic organisation that forms part of the European Molecular Biology Laboratory (EMBL) ( http://www.embl.org/).\nThe EBI is a centre for research and services in bioinformatics. The Institute m",
+            "resource":"https://www.biocatalogue.org/service_providers/1"
+         }
+      ]
+   }
+}

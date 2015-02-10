@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <!--<script src="http://code.jquery.com/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+    <script src="js/mainApp.js"></script>
+    <script src="js/mainAppController.js"></script>
+    <script src="js/mainAppService.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css">
+    <link rel="stylesheet" href="css/docs.min.css">
+    <style>
+      li { list-style: none; }
+
+      #spinner-background {
+        background: #000000;
+        display: none;
+        height: 100%;
+        left: 0px;
+        opacity: .5;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 3;
+      }
+
+      img.spinner-image {
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        position: fixed;
+        top: 50%;
+        width: 100px;
+      }
+
+    </style>
+  </head>
+  <body ng-app="MainApp">
+
+    <div class="container bs-docs-container">
+      <!-- Greyed out area which does not allow the user to interact with the interface -->
+      <div id="spinner-background">
+        <img class="spinner-image" src="images/loading2.gif"/>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bs-docs-section">
+            <h1 id="overview" class="page-header">Overview - Blocking the page with a loading spinner</h1>
+
+            <p class="lead">The main idea is to see how the page is greyed out when certain request is being processed not allowing the user to interact with the site in the interim. There are many cases where you would like to keep the user from intercating with the page. For instance, when having a grid table that displays the results and these are paged. Imagine the scenario where the user is fast enough to click on any page (assuming that the pages are already showing up as this type of query usually takes less than fetching the actual results) before the previuos search results have arrived. At that point, you might end up with some inconsistencies as the grid will first get loaded with the second search data and few moments after will be replaced with the first search. This will make the user feel very confused. Hence, in order to avoid this type of potential issues, one valid solution is to show a meaningful loading icon helping the user understand that one operation is already in progress.</p>
+
+            <h3 id="overview-doctype">How it works?</h3>
+            <p>We have created one interceptior such as when any http request is triggered, the requests is captured and delayed (on porpose) so we get the chance to see the loading spinner in action.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="form-group">
+            <label for="searchQuery">Search Query: </label>
+            <div class="row">
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="searchQuery" ng-model="searchQuery" placeholder="Enter search query">
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-primary" ng-click="fetchResults()">Fetch Results</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div ng-controller="MainAppController" ng-init="init()">
+          <div class="bs-example" data-example-id="striped-table">
+            <table class="table table-striped table-condensed">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Affiliation</th>
+                  <th>Public E-mail</th>
+                  <th>Join Date</th>
+                  <th>Location</th>
+                  <th>Resource</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="searchResult in searchResults">
+                  <td>{{searchResult.name}}</td>
+                  <td>{{searchResult.affiliation}}</td>
+                  <td>{{searchResult.public_email}}</td>
+                  <td>{{searchResult.joined | date:'longDate'}}</td>
+                  <td>{{searchResult.location.country}}</td>
+                  <td>{{searchResult.resource}}</td>
+                </tr>
+                <tr ng-if="searchResults.length == 0">
+                  <td colspan="6">No Results Found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</html>
