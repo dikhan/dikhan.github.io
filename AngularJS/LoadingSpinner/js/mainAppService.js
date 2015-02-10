@@ -24,7 +24,7 @@ mainApp.service('MainAppService', ['$rootScope', '$http', '$log', '$q', function
               $http({
                 method: 'GET',
                 //url: "https://www.biocatalogue.org/search.json",
-                url: "../bioCatalogueSearchResults.json",
+                url: "bioCatalogueSearchResults.json",
                 data: $.param({ // Form Parameters
                 }),              
                 params: { // Query Parameters
